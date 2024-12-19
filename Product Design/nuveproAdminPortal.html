@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Designing the Admin Portal for Nuvepro Cloud Labs</title>
+    <meta name="description" content="Nuvepro Technologies required an admin portal to manage their new LMS, focusing on designing a user-friendly interface for course creation, lab integration, and overall management. The portal needed to accommodate three primary user roles: administrators, managers, and learners. The aim was to streamline the process of creating and managing courses, integrating labs, and overseeing user interactions.">
+    <meta property="og:image" content="../assets/img/Cloudlabs/Admin%20Portal.png">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans&amp;display=swap">
+    <link rel="stylesheet" href="../assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/Lightbox-Gallery-baguetteBox.min.css">
+    <link rel="stylesheet" href="../assets/css/Navbar-Right-Links-icons.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YJSMF1C6VE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YJSMF1C6VE');
+</script>
+</head>
+
+<body style="--bs-primary: #ee6c4d;--bs-primary-rgb: 238,108,77;--bs-secondary: #98c1d9;--bs-secondary-rgb: 152,193,217;--bs-light: #e0fbfc;--bs-light-rgb: 224,251,252;--bs-dark: #293241;--bs-dark-rgb: 41,50,65;--bs-body-color: #3d5a80;">
+    <nav class="navbar navbar-expand-md bg-body py-3">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span style="font-weight: bold;">MANOJ JOSHI</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../work.html">Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../resume.html">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="d-flex flex-row main-section">
+        <div class="sidebar" style="padding: 54px;width: 20%;">
+            <div>
+                <h1 style="font-weight: 700;font-size: 54px;font-family: 'Inter';color: var(--bs-primary);--bs-body-color: #3D5A80;--bs-dark: #293241;--bs-dark-rgb: 41,50,65;--bs-secondary: #98C1D9;--bs-secondary-rgb: 152,193,217;--bs-primary: #EE6C4D;--bs-primary-rgb: 238,108,77;--bs-light: #E0FBFC;--bs-light-rgb: 224,251,252;">MANOJ JOSHI</h1><span style="font-size: 18px;font-family: 'Work Sans', sans-serif;">Product Designer</span>
+            </div>
+            <div class="d-flex flex-column" style="margin-top: 24px;margin-bottom: 24px;"><a class="link" href="../index.html" style="padding-top: 6px;padding-bottom: 6px;font-family: 'Work Sans', sans-serif;/*color: #3d5a80;*/">Home</a><a class="link" href="../about.html" style="padding-top: 6px;padding-bottom: 6px;">About</a><a class="link" href="../work.html" style="padding-top: 6px;padding-bottom: 6px;">Work</a><a class="link" href="../resume.html" style="padding-top: 6px;padding-bottom: 6px;">Resume</a></div>
+            <div class="d-flex flex-column"><div class="icon">
+<a class="social-icon-link" href="https://www.linkedin.com/in/manoj-joshi-0a771228/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-60 -150 1000 1000" class="social-icon"><path fill="currentColor" d="M195 349v553H11V349h184zm12-171q0 41-29 68t-75 27h-1q-46 0-74-27T0 178t29-68 75-27 74 27 29 68zm650 407v317H674V606q0-59-23-92t-71-33q-35 0-58 19t-36 48q-6 17-6 45v309H296q1-223 1-361V376l-1-27h184v80h-1q11-18 23-31t31-29 49-24 64-9q95 0 153 63t58 186z"></path></svg>
+</a>
+</div>
+                <p style="font-size: 14px;font-family: 'Work Sans', sans-serif;--bs-body-color: var(--bs-secondary);"><span style="color: rgb(51, 51, 51);">© 2024 Manoj Joshi</span></p>
+            </div>
+        </div>
+        <div class="d-flex flex-column main-container" style="--bs-primary: #EE6C4D;--bs-primary-rgb: 238,108,77;--bs-secondary: #98C1D9;--bs-secondary-rgb: 152,193,217;--bs-light: #E0FBFC;--bs-light-rgb: 224,251,252;--bs-dark: #293241;--bs-dark-rgb: 41,50,65;--bs-body-color: #293241;padding: 54px;margin-left: 20%;">
+            <p class="d-flex flex-row" style="font-size: 30px;font-weight: bold;font-family: 'Work Sans', sans-serif;color: var(--bs-primary);margin: 0px;"><a class="d-xl-flex align-items-xl-center" href="../work.html" style="margin-right: 16px;font-size: 30px;color: var(--bs-secondary);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-left" style="margin: 0px;">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"></path>
+                    </svg></a></p>
+            <div class="d-flex flex-row" style="width: 100%;">
+                <div class="main-container left-container" style="--bs-primary: #EE6C4D;--bs-primary-rgb: 238,108,77;--bs-secondary: #98C1D9;--bs-secondary-rgb: 152,193,217;--bs-light: #E0FBFC;--bs-light-rgb: 224,251,252;--bs-dark: #293241;--bs-dark-rgb: 41,50,65;--bs-body-color: #293241;width: 100%;">
+                    <h1 style="font-family: 'Work Sans', sans-serif;font-weight: bold;font-size: 30px;color: var(--bs-primary);">Designing the Admin Portal for Nuvepro Cloud Labs</h1>
+                    <p style="font-size: 14px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;margin-left: 54px;"><strong>Role:</strong> UX designer, UI designer<br><strong>Date:</strong> Sept 2022 - July 2023<br><strong>Team:</strong> Adarsh EA, Mohd. Zuheb, Manoj Joshi, Pooja Kannan<br><strong>Tools:</strong> Adobe XD, Microsoft Teams, Zoho Sprints, Sharepoint, draw.io</p>
+                    <h1 style="font-family: 'Work Sans', sans-serif;font-weight: bold;font-size: 24px;color: var(--bs-primary);"><strong>Overview</strong></h1>
+                    <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;">Nuvepro Technologies required an <strong>admin portal</strong> to manage their new LMS, focusing on designing a user-friendly interface for course creation, lab integration, and overall management. The portal needed to accommodate three primary user roles: administrators, managers, and learners. The aim was to streamline the process of creating and managing courses, integrating labs, and overseeing user interactions.</p>
+                </div>
+                <div class="main-container" style="--bs-primary: #EE6C4D;--bs-primary-rgb: 238,108,77;--bs-secondary: #98C1D9;--bs-secondary-rgb: 152,193,217;--bs-light: #E0FBFC;--bs-light-rgb: 224,251,252;--bs-dark: #293241;--bs-dark-rgb: 41,50,65;--bs-body-color: #293241;width: 100%;"><img width="100" height="80" style="width: 100%;height: auto;margin-top: 48px;" src="../assets/img/Cloudlabs/Cover.png"></div>
+            </div>
+            <div>
+                <h1 style="font-family: 'Work Sans', sans-serif;font-weight: bold;font-size: 24px;color: var(--bs-primary);"><strong>Background</strong></h1>
+                <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;">Nuvepro Technologies provides <strong>cloud-based</strong> and <strong>virtual lab environments</strong> for various educational and enterprise needs. The admin portal was designed <strong>to support administrators in creating and managing educational content</strong>,<strong> integrating sandbox environments</strong>, and<strong> facilitating user management </strong>within the LMS.</p>
+                <h1 style="font-family: 'Work Sans', sans-serif;font-weight: bold;font-size: 24px;color: var(--bs-primary);"><strong>Project Goals</strong></h1>
+                <div class="d-flex flex-row" style="padding-bottom: 20px;">
+                    <div style="padding: 12px;border: 1px solid var(--bs-secondary);border-radius: 6px;margin: 6px;background: #e0fbfc;">
+                        <p class="d-flex flex-row" style="font-size: 18px;font-weight: bold;font-family: 'Work Sans', sans-serif;color: var(--bs-primary);">Efficient Course Management</p>
+                        <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;">Create an intuitive interface for administrators to design and manage courses, including content and associated labs.</p>
+                    </div>
+                    <div style="padding: 12px;border: 1px solid var(--bs-secondary);border-radius: 6px;margin: 6px;background: #e0fbfc;">
+                        <p class="d-flex flex-row" style="font-size: 18px;font-weight: bold;font-family: 'Work Sans', sans-serif;color: var(--bs-primary);">Seamless Lab Integration</p>
+                        <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;">Provide tools to integrate both cloud-based labs and virtual machines into course modules.</p>
+                    </div>
+                    <div style="padding: 12px;border: 1px solid var(--bs-secondary);border-radius: 6px;margin: 6px;background: #e0fbfc;">
+                        <p class="d-flex flex-row" style="font-size: 18px;font-weight: bold;font-family: 'Work Sans', sans-serif;color: var(--bs-primary);">User Management</p>
+                        <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;">Implement features for managing user roles and permissions, tracking progress, and assessing performance.</p>
+                    </div>
+                </div>
+                <h1 style="font-family: 'Work Sans', sans-serif;font-weight: bold;font-size: 24px;color: var(--bs-primary);">Design Process</h1>
+            </div>
+            <h1 style="font-family: 'Work Sans', sans-serif;font-weight: bold;font-size: 21px;color: var(--bs-secondary);text-align: left;">User Research and Analysis</h1>
+            <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;text-align: left;">During the user research and analysis phase, we identified two primary personas: <strong>Emily Johnson</strong>, an administrator responsible for course creation and lab integration, and <strong>John Smith</strong>, a manager overseeing learner progress. Through interviews and task analyses, we uncovered their distinct goals and pain points. Emily required an intuitive interface to create courses efficiently, integrate labs seamlessly, and access actionable analytics, while John needed tools to track learner performance, customize reports, and manage learning paths effectively. These insights guided our design decisions, ensuring the portal addressed their unique needs and workflows.</p>
+            <h1 style="font-family: 'Work Sans', sans-serif;font-weight: bold;font-size: 21px;color: var(--bs-secondary);text-align: left;">User Personas</h1>
+            <div class="d-flex flex-row" style="font-size: 12px;">
+                <div class="section" style="padding: 12px;margin: 12px;background: #e0fbfc;border-radius: 12px;width: 50%;">
+                    <div style="width: 100%;">
+                        <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;text-align: left;color: var(--bs-secondary);"><strong>Administrator Persona -&nbsp;Emily Johnson</strong></p>
+                        <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;text-align: left;"><strong>Profile</strong></p>
+                        <div>
+                            <ul>
+                                <li><strong>Role:</strong> Course Designer and LMS Manager</li>
+                                <li><strong>Background: </strong>Administrator has 10 years of experience in educational technology and manages the LMS for a mid-sized educational institution. She is responsible for creating and managing courses, integrating lab environments, and overseeing the overall functionality of the LMS.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;text-align: left;"><strong>Goals</strong></p>
+                        <ul>
+                            <li>Create and update courses efficiently.</li>
+                            <li>Integrate various lab environments (cloud-based and virtual machines) with minimal effort.</li>
+                            <li>Monitor and report on user engagement and performance.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;text-align: left;"><strong>Pain Points</strong></p>
+                        <ul>
+                            <li>Navigating complex interfaces can be time-consuming.<br>
+                                <ul></ul>
+                            </li>
+                            <li>Difficulty in managing multiple lab environments.<br>
+                                <ul></ul>
+                            </li>
+                            <li>Need for clear and actionable analytics.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section" style="padding: 12px;background: #e0fbfc;border-radius: 12px;margin: 12px;width: 50%;">
+                    <div style="width: 100%;">
+                        <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;text-align: left;color: var(--bs-secondary);"><strong>Manager Persona - John Smith</strong></p>
+                        <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;text-align: left;"><strong>Profile</strong></p>
+                        <div>
+                            <ul>
+                                <li><strong>Role: </strong>Learning Manager</li>
+                                <li><strong>Background:</strong> John oversees the learning progress of employees at a large corporation. He uses the LMS to track the performance and progress of learners, assign courses, and ensure that learning objectives are met.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;text-align: left;"><strong>Goals</strong></p>
+                        <ul>
+                            <li>Track learner progress and performance effectively.</li>
+                            <li>Assign and manage learning paths.</li>
+                            <li>Generate reports on learner engagement and outcomes.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;text-align: left;"><strong>Pain Points</strong></p>
+                        <ul>
+                            <li>Limited visibility into individual learner progress.</li>
+                            <li>Complicated reporting tools.</li>
+                            <li>Difficulty in managing learning paths across different courses.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h1 style="font-family: 'Work Sans', sans-serif;font-weight: bold;font-size: 21px;color: var(--bs-secondary);text-align: left;">Stakeholder Interviews</h1>
+            <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;text-align: left;">To ensure the admin portal aligned with both business objectives and user expectations, we conducted stakeholder interviews with Nuvepro’s key teams, including product managers, LMS administrators, and technical leads. These discussions provided valuable insights into the operational challenges faced by administrators and managers, such as managing diverse lab environments and tracking user performance. Stakeholders emphasized the need for an intuitive interface, robust reporting tools, and seamless lab integration capabilities. Their input played a critical role in defining project priorities and shaping the portal's features to balance usability with technical feasibility.</p>
+            <div class="d-flex flex-row">
+                <div class="section" style="padding: 12px;width: 33%;">
+                    <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;text-align: left;"><strong>Business Goals</strong></p>
+                    <ul>
+                        <li><strong>Streamline LMS Operations</strong>: Develop a user-friendly admin portal that simplifies course creation, lab integration, and user management to enhance operational efficiency.</li>
+                        <li><strong>Increase Adoption</strong>: Provide an intuitive interface that encourages frequent use by administrators and managers, driving higher engagement with the LMS.</li>
+                        <li><strong>Enhance Analytics Capabilities</strong>: Offer robust reporting and analytics tools to demonstrate value to educational institutions and enterprise clients.</li>
+                    </ul>
+                </div>
+                <div class="section" style="padding: 12px;width: 33%;">
+                    <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;text-align: left;"><strong>User Needs</strong></p>
+                    <ul>
+                        <li><strong>Efficient Course Management</strong>: Administrators need a straightforward way to create and manage courses, integrate labs, and configure learning paths.</li>
+                        <li><strong>Accessible Reporting Tools</strong>: Managers require customizable, easy-to-navigate reports to track learner progress and outcomes effectively.</li>
+                        <li><strong>Clear and Intuitive UI</strong>: Both roles need an interface that minimizes complexity and supports seamless navigation across functionalities.</li>
+                    </ul>
+                </div>
+                <div class="section" style="padding: 12px;width: 33%;">
+                    <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;text-align: left;"><strong>Technical Requirements</strong></p>
+                    <ul>
+                        <li><strong>Lab Integration Tools</strong>: Enable seamless integration with cloud-based and virtual lab environments such as AWS, Azure, and GCP.</li>
+                        <li><strong>Scalable Architecture</strong>: Ensure the system supports growing user bases, varied course sizes, and complex lab setups without performance degradation.</li>
+                        <li><strong>Secure Role-Based Access Control</strong>: Implement robust authentication and authorization mechanisms to manage user roles and permissions securely.</li>
+                    </ul>
+                </div>
+            </div>
+            <h1 style="font-family: 'Work Sans', sans-serif;font-weight: bold;font-size: 21px;color: var(--bs-secondary);text-align: left;">User Flows</h1>
+            <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;text-align: left;">We created detailed user journeys to map out the interactions of our primary personas, <strong>Administrator</strong> and <strong>Manager</strong>, with the admin portal. These journeys outlined key tasks, such as Administrator’s process for creating courses and integrating labs, and Manager’s workflow for tracking learner progress and generating reports. By identifying touchpoints and potential pain points, such as complex navigation or insufficient reporting tools, we ensured the design addressed user frustrations while supporting their goals. These user journeys provided a clear framework for crafting an intuitive and efficient user experience.</p>
+            <div class="d-flex flex-column"><img class="section" src="../assets/img/Adminportal/User%20Flow%20-%20Emily.png" style="padding: 36px;width: 70%;margin-right: auto;margin-left: auto;">
+                <div class="d-flex flex-row">
+                    <div style="padding: 12px;">
+                        <h1 style="font-size: 24px;font-family: 'Work Sans', sans-serif;font-weight: bold;">Touch Points</h1>
+                        <p>Admin portal dashboard, course creation interface, lab integration tools, analytics dashboard.</p>
+                    </div>
+                    <div style="padding: 12px;">
+                        <h1 style="font-size: 24px;font-family: 'Work Sans', sans-serif;font-weight: bold;">Pain Points</h1>
+                        <p>Emily may experience frustration if the lab integration process is not straightforward or if the analytics tools are difficult to interpret.</p>
+                    </div>
+                </div><img class="section" src="../assets/img/Adminportal/User%20Flow%20-%20John.png" style="padding: 36px;width: 70%;margin-right: auto;margin-left: auto;">
+            </div>
+            <div class="d-flex flex-row">
+                <div style="padding: 12px;">
+                    <h1 style="font-size: 24px;font-family: 'Work Sans', sans-serif;font-weight: bold;">Touch Points</h1>
+                    <p>Admin portal dashboard, learner progress overview, reporting tools.</p>
+                </div>
+                <div style="padding: 12px;">
+                    <h1 style="font-size: 24px;font-family: 'Work Sans', sans-serif;font-weight: bold;">Pain Points</h1>
+                    <p>John might find the reporting tools cumbersome if they lack customization options or if the data visualization is not clear.</p>
+                </div>
+            </div>
+            <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;text-align: left;"><span style="color: rgb(51, 51, 51);">With these user flows in mind, we started visualizing past the MVP through wireframing as much as we could.</span></p>
+            <h1 style="font-family: 'Work Sans', sans-serif;font-weight: bold;font-size: 21px;color: var(--bs-secondary);text-align: left;">Design Strategy &amp; Implementation</h1>
+            <div class="d-flex flex-row align-items-xl-center" style="width: 100%;padding: 24px;">
+                <div class="section" style="width: 50%;">
+                    <h1 style="font-family: 'Work Sans', sans-serif;font-weight: bold;font-size: 18px;color: #3d5a80;text-align: left;">Typography &amp; Colors</h1>
+                    <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;text-align: left;color: #3d5a80;">We chose Poppins as the primary font to create a modern, clean, and approachable interface. Poppins' geometric sans-serif style provides excellent readability across devices, ensuring both learners and administrators can easily navigate content. Its rounded shapes and balanced proportions convey a friendly yet professional tone, aligning well with Nuvepro’s goal of being both user-centric and functional. The font's versatility, with a wide range of weights, allows for clear hierarchy in the design, from bold headlines to lighter body text, enhancing overall visual clarity and user experience.</p>
+                </div>
+                <div class="section" style="width: 50%;"><img class="section" src="../assets/img/Adminportal/Typography%20and%20Colors.png" style="width: 100%;padding: 24px;"></div>
+            </div>
+            <div class="d-flex flex-row-reverse flex-sm-column flex-md-column align-items-xl-center" style="width: 100%;padding: 24px;">
+                <div class="section" style="width: 50%;">
+                    <h1 style="font-family: 'Work Sans', sans-serif;font-weight: bold;font-size: 18px;color: #3d5a80;text-align: left;">Icon Design</h1>
+                    <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;text-align: left;color: #3d5a80;"><br>We utilized the IcoMoon Ultimate icon font to ensure a cohesive and professional visual language. The icons were carefully selected to complement the design aesthetics and enhance usability, providing clear, intuitive cues for actions and navigation. By leveraging IcoMoon’s versatility and compatibility, we seamlessly integrated the icons into the interface, aligning them with the existing design elements while maintaining visual consistency across the portal. This approach improved user comprehension and streamlined interactions.<br><br></p>
+                </div>
+                <div class="section" style="width: 50%;"><img src="../assets/img/Adminportal/Iconography.png" style="width: 100%;padding: 24px;"></div>
+            </div>
+            <div class="d-flex flex-row align-items-xl-center" style="width: 100%;padding: 24px;">
+                <div class="section" style="width: 50%;">
+                    <h1 style="font-family: 'Work Sans', sans-serif;font-weight: bold;font-size: 18px;color: #3d5a80;text-align: left;">Component Design</h1>
+                    <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;text-align: left;"><br>Our component design focused on creating intuitive and reusable elements for form inputs and navigation. For the form elements, we designed a clean and structured layout with dropdowns, text fields, and checkboxes to guide users through complex tasks like course creation and lab integration. Navigation components, including a side menu and breadcrumb trails, ensured seamless access to different sections of the portal, enhancing usability and reducing cognitive load. These components were crafted with scalability in mind, ensuring they could adapt to future features while maintaining a consistent user experience.<br><br></p>
+                </div>
+                <div class="section" style="width: 50%;"><img src="../assets/img/Adminportal/Screenshot%202024-09-12%20122449.png" style="width: 100%;"></div>
+            </div>
+            <section class="photo-gallery py-4 py-xl-5" style="padding: 0px;">
+                <div class="container">
+                    <div class="row d-flex d-xl-flex flex-row mb-5">
+                        <div class="col">
+                            <h1 style="font-family: 'Work Sans', sans-serif;font-weight: bold;font-size: 21px;color: var(--bs-secondary);text-align: left;">Medium Fidelity Wireframes</h1>
+                        </div>
+                    </div>
+                    <div class="row gx-2 gy-2 row-cols-1 row-cols-md-2 row-cols-xl-3 photos" data-bss-baguettebox="">
+                        <div class="col item"><a href="../assets/img/Adminportal/Screenshot%202024-09-12%20123302.png"><img class="img-fluid" src="../assets/img/Adminportal/Screenshot%202024-09-12%20123302.png"></a></div>
+                        <div class="col item"><a href="../assets/img/Adminportal/Screenshot%202024-09-12%20123546.png"><img class="img-fluid" src="../assets/img/Adminportal/Screenshot%202024-09-12%20123546.png"></a></div>
+                        <div class="col item"><a href="../assets/img/Adminportal/Screenshot%202024-09-12%20123653.png"><img class="img-fluid" src="../assets/img/Adminportal/Screenshot%202024-09-12%20123653.png"></a></div>
+                        <div class="col item"><a href="../assets/img/Adminportal/Screenshot%202024-09-12%20123747.png"><img class="img-fluid" src="../assets/img/Adminportal/Screenshot%202024-09-12%20123747.png"></a></div>
+                        <div class="col item"><a href="../assets/img/Adminportal/Screenshot%202024-09-12%20123835.png"><img class="img-fluid" src="../assets/img/Adminportal/Screenshot%202024-09-12%20123835.png"></a></div>
+                        <div class="col item"><a href="../assets/img/Adminportal/Screenshot%202024-09-12%20123914.png"><img class="img-fluid" src="../assets/img/Adminportal/Screenshot%202024-09-12%20123914.png"></a></div>
+                        <div class="col item"><a href="../assets/img/Adminportal/Screenshot%202024-09-12%20124109.png"><img class="img-fluid" src="../assets/img/Adminportal/Screenshot%202024-09-12%20124109.png"></a></div>
+                        <div class="col item"><a href="../assets/img/Adminportal/Screenshot%202024-09-12%20124219.png"><img class="img-fluid" src="../assets/img/Adminportal/Screenshot%202024-09-12%20124219.png"></a></div>
+                        <div class="col item"><a href="../assets/img/Adminportal/Screenshot%202024-09-12%20124302.png"><img class="img-fluid" src="../assets/img/Adminportal/Screenshot%202024-09-12%20124302.png"></a></div>
+                        <div class="col item"><a href="../assets/img/Adminportal/Screenshot%202024-09-12%20124343.png"><img class="img-fluid" src="../assets/img/Adminportal/Screenshot%202024-09-12%20124343.png"></a></div>
+                        <div class="col item"><a href="../assets/img/Adminportal/Screenshot%202024-09-12%20124428.png"><img class="img-fluid" src="../assets/img/Adminportal/Screenshot%202024-09-12%20124428.png"></a></div>
+                        <div class="col item"><a href="../assets/img/Adminportal/Screenshot%202024-09-12%20124520.png"><img class="img-fluid" src="../assets/img/Adminportal/Screenshot%202024-09-12%20124520.png"></a></div>
+                        <div class="col item"><a href="../assets/img/Adminportal/Screenshot%202024-09-12%20124606.png"><img class="img-fluid" src="../assets/img/Adminportal/Screenshot%202024-09-12%20124606.png"></a></div>
+                        <div class="col item"><a href="../assets/img/Adminportal/Screenshot%202024-09-12%20124655.png"><img class="img-fluid" src="../assets/img/Adminportal/Screenshot%202024-09-12%20124655.png"></a></div>
+                        <div class="col item"><a href="../assets/img/Adminportal/Screenshot%202024-09-12%20124754.png"><img class="img-fluid" src="../assets/img/Adminportal/Screenshot%202024-09-12%20124754.png"></a></div>
+                    </div>
+                </div>
+            </section>
+            <h1 style="font-family: 'Work Sans', sans-serif;font-weight: bold;font-size: 24px;color: var(--bs-primary);">Testing and Iteration</h1>
+            <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;text-align: left;color: #3d5a80;">During the iteration phase, we refined the course creation process to align with user needs and expectations. A course was defined as a structure composed of <strong>topics</strong>, where each topic contained <strong>activities</strong>—the smallest unit within the course. Activities could include a combination of cloud labs, multimedia content, or assignments. By breaking courses into these modular components, administrators gained flexibility in designing learning paths, making it easier to integrate labs or adjust content dynamically. This hierarchical approach ensured clarity and streamlined course management.</p><img class="d-xl-flex" src="../assets/img/Adminportal/testing%20and%20iteration.png" style="width: 70%;margin-right: auto;margin-left: auto;">
+            <p style="font-size: 16px;font-family: 'Work Sans', sans-serif;border-color: rgb(61, 90, 128);border-top-color: rgb(61,;border-right-color: 90,;border-bottom-color: 128);border-left-color: 90,;text-align: left;color: #3d5a80;">Additionally, we focused on enhancing the management of <strong>groups and cohorts</strong>. Groups allowed administrators to organize learners based on teams, departments, or skill levels, while cohorts enabled the assignment of specific learning paths to these groups. This functionality facilitated targeted learning experiences, progress tracking, and personalized resources. By iterating on these features, we created an intuitive system for managing learners at scale, enabling tailored educational strategies for diverse user bases.</p>
+            <h1 style="font-family: 'Work Sans', sans-serif;font-weight: bold;font-size: 24px;color: var(--bs-primary);">Further Additions</h1>
+            <h1 style="font-family: 'Work Sans', sans-serif;font-weight: bold;font-size: 21px;color: var(--bs-secondary);">Course Creation</h1>
+            <h1 style="font-family: 'Work Sans', sans-serif;font-weight: bold;font-size: 18px;color: #3d5a80;">Steps in Course Creation:</h1>
+            <ul>
+                <li><strong>Define Course Basics</strong>
+                    <ul>
+                        <li>Title, description, and tags for searchability.</li>
+                        <li>The form also allowed admins to select whether the course would be public (for independent learning providers) or private (for internal teams).</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li><strong>Upload Course Materials:</strong>
+                    <ul>
+                        <li>Administrators could upload files, embed videos, or add external links using an easy-to-navigate media manager.</li>
+                        <li>Courses could be sectioned into multiple parts using drag-and-drop elements to arrange content.</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li><strong>Select Lab Environments:</strong>
+                    <ul>
+                        <li>This step integrated lab environments seamlessly into the course. Admins could choose from existing playgrounds or challenge labs or create new ones on the fly.</li>
+                        <li>They could also configure specific parameters, such as access duration for labs, sandbox persistence, and cloud provider options.</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li><strong>Skill Bundles &amp; Progression Settings:</strong>
+                    <ul>
+                        <li>Admins could group content into skill bundles, ensuring learners completed prerequisite modules before progressing.</li>
+                        <li>A course map visualized the entire structure, helping admins review the flow of playgrounds and challenge labs.</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li><strong>Assessment Configuration:</strong>
+                    <ul>
+                        <li>Administrators could set up assessments for challenge labs, including passing criteria, auto-grading options, and manual review for tasks that required subjective evaluation.</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li><strong>Preview Mode:</strong>
+                    <ul>
+                        <li>Before publishing, the admin could preview the entire course and lab environments from the learner’s perspective to ensure all content and settings were correct.</li>
+                    </ul>
+                </li>
+            </ul>
+            <section class="photo-gallery py-4 py-xl-5">
+                <div class="container">
+                    <div class="row gx-2 gy-2 row-cols-1 row-cols-md-2 row-cols-xl-3 photos" data-bss-baguettebox="">
+                        <div class="col item"><a href="../assets/img/Adminportal/Screenshot%202024-09-12%20150253.png"><img class="img-fluid" src="../assets/img/Adminportal/Screenshot%202024-09-12%20150253.png"></a></div>
+                        <div class="col item"><a href="../assets/img/Adminportal/Screenshot%202024-09-12%20150345.png"><img class="img-fluid" src="../assets/img/Adminportal/Screenshot%202024-09-12%20150345.png"></a></div>
+                        <div class="col item"><a href="../assets/img/Adminportal/Screenshot%202024-09-12%20150430.png"><img class="img-fluid" src="../assets/img/Adminportal/Screenshot%202024-09-12%20150430.png"></a></div>
+                        <div class="col item"><a href="../assets/img/Adminportal/Screenshot%202024-09-12%20150610.png"><img class="img-fluid" src="../assets/img/Adminportal/Screenshot%202024-09-12%20150610.png"></a></div>
+                        <div class="col item"><a href="../assets/img/Adminportal/Screenshot%202024-09-12%20150708.png"><img class="img-fluid" src="../assets/img/Adminportal/Screenshot%202024-09-12%20150708.png"></a></div>
+                        <div class="col item"><a href="../assets/img/Adminportal/Screenshot%202024-09-12%20150802.png"><img class="img-fluid" src="../assets/img/Adminportal/Screenshot%202024-09-12%20150802.png"></a></div>
+                        <div class="col item"><a href="../assets/img/Adminportal/Screenshot%202024-09-12%20150850.png"><img class="img-fluid" src="../assets/img/Adminportal/Screenshot%202024-09-12%20150850.png"></a></div>
+                        <div class="col item"><a href="../assets/img/Adminportal/Screenshot%202024-09-12%20151002.png"><img class="img-fluid" src="../assets/img/Adminportal/Screenshot%202024-09-12%20151002.png"></a></div>
+                        <div class="col item"><a href="../assets/img/Adminportal/Screenshot%202024-09-12%20151045.png"><img class="img-fluid" src="../assets/img/Adminportal/Screenshot%202024-09-12%20151045.png"></a></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+    <script src="../assets/js/Lightbox-Gallery-baguetteBox.min.js"></script>
+    <script src="../assets/js/Lightbox-Gallery.js"></script>
+</body>
+
+</html>

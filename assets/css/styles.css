@@ -1,0 +1,16 @@
+@media (max-width: 576px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.link {
+  text-decoration: none;
+}
+
+.icon-main {
+  fill: var(--bs-secondary) !important;
+  width: 100px;
+  padding: 18px;
+}
+
